@@ -1,0 +1,8 @@
+dist
+node_modules
+.idea
+coverage
+temp
+# Windows image file caches
+Thumbs.db
+ehthumbs.db

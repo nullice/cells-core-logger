@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在浏览器测试一下</title>
+    <script src="./../dist/CellsCoreLogger.umd.js"></script>
+    <style>
+        body {
+            padding: 100px;
+            text-align: center;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    var log = new CellsCoreLogger()
+
+    log.scope("debug").net.postRequest("上传文件", { file: window.FastBuffer })
+    log.scope("debug").net.postResponse("postResponse asdfsdfsdfds")
+    log.scope("debug").net.getRequest("getRequest")
+    log.scope("debug").net.getResponse("getRequest")
+    log.scope("debug").net.putRequest("putRequest")
+    log.scope("debug").net.putResponse("putResponse")
+    log.scope("debug").net.deleteRequest("deleteRequest")
+    log.scope("debug").net.deleteResponse("deleteResponse")
+    log.scope("debug").net.socket("soket")
+    log.scope("debug").net.socketEmit("socketEmit")
+    log.scope("debug").net.socketOn("socketOn")
+
+    log.scope("mian.js").net.request("😂API", "request")
+    log.scope("mian.js").net.response("😂API", "response")
+    log.scope("mian.js").badge.color.red("red")
+    log.scope("mian.js").badge.color.blue("blue")
+    log.scope("mian.js").badge.color.green("green", "asdfasdfasd")
+    log.scope("mian.js").badge.color.orange("orange", "dsfsdafasdf")
+    log.scope("mian.js").badge.color.violet("violet", "dsfsdafasdf")
+    log.scope("mian.js").badge.color.pink("pink", "dsfsdafasdf")
+    log.scope("mian.js").badge.color.gray("gray", "dsfsdafasdf")
+    log.scope("mian.js").badge.color.yellow("yellow", "dsfsdafasdf")
+    log.scope("mian.js").badge.color.black("black", "dsfsdafasdf")
+    log.scope("mian.js").badge.error("dsfsdafasdf", "你出错了啊")
+    log.scope("mian.js").badge.wran("dsfsdafasdf", "你有问题")
+    log.scope("mian.js").badge.color.value({ bk: "#248", font: "#1fa" }, "dsfsdafasdf")
+
+    log.scope("mian.js").badgeGhost.color.red("上传文件", "1/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.blue("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.green("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.pink("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.violet("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.yellow("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.gray("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.black("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.error("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.wran("上传文件", "2/3", "dsafdsf")
+    log.scope("mian.js").badgeGhost.color.value({ bk: "#248", font: "#1fa" }, "dsfsdafasdf","😘")
+
+    log.scope("setse杀杀杀.js").dot.color.red("red")
+    log.scope("setse杀杀杀.js").dot.color.blue("blue")
+    log.scope("setse杀杀杀.js").dot.color.green("green", "asdfasdfasd")
+    log.scope("setse杀杀杀.js").dot.color.orange("orange", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.color.violet("violet", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.color.pink("pink", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.color.gray("gray", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.color.yellow("yellow", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.color.black("black", "dsfsdafasdf")
+    log.scope("setse杀杀杀.js").dot.error("dsfsdafasdf", "你出错了啊")
+    log.scope("setse杀杀杀.js").dot.wran("dsfsdafasdf", "你有问题")
+    log.scope("mian.js").dot.color.value({ bk: "#248", font: "#1fa" }, "dsfsdafasdf","😘")
+
+    log.scope("setse.js").ul.color.red("red")
+    log.scope("setse.js").ul.color.blue("blue")
+    log.scope("setse.js").ul.color.green("green", "asdfasdfasd")
+    log.scope("setse.js").ul.color.orange("orange", "dsfsdafasdf")
+    log.scope("setse.js").ul.color.violet("violet", "dsfsdafasdf")
+    log.scope("setse.js").ul.color.pink("pink", "dsfsdafasdf")
+    log.scope("setse.js").ul.color.gray("gray", "dsfsdafasdf")
+    log.scope("setse.js").ul.color.yellow("yellow", "dsfsdafasdf")
+    log.scope("setse.js").ul.color.black("black", "dsfsdafasdf")
+    log.scope("setse.js").ul.error("dsfsdafasdf", "你出错了啊")
+    log.scope("setse.js").ul.wran("dsfsdafasdf", "你有问题")
+    log.scope("mian.js").ul.color.value({ bk: "#248", font: "#1fa" }, "dsfsdafasdf","😘")
+
+    log.scope("mian.js").like.color.red("red")
+    log.scope("mian.js").like.color.blue("blue")
+    log.scope("mian.js").like.color.green("green", "asdfasdfasd")
+    log.scope("mian.js").like.color.orange("orange", "dsfsdafasdf")
+    log.scope("mian.js").like.color.violet("violet", "dsfsdafasdf")
+    log.scope("mian.js").like.color.pink("pink", "dsfsdafasdf")
+    log.scope("mian.js").like.color.gray("gray", "dsfsdafasdf")
+    log.scope("mian.js").like.color.yellow("yellow", "dsfsdafasdf")
+    log.scope("mian.js").like.color.black("black", "dsfsdafasdf")
+    log.scope("mian.js").like.error("dsfsdafasdf", "你出错了啊")
+    log.scope("mian.js").like.wran("dsfsdafasdf", "你有问题")
+    log.scope("mian.js").like.color.value({ bk: "#248", font: "#1fa" }, "dsfsdafasdf","😘")
+
+    log.scope("mian.js").pin("pin","red")
+
+</script>
+<div>引入了 /dist/CellsCoreLogger.bundle-web.js</div>
+(0_0) 打开控制台调试吧
+
+</body>
+</html>
